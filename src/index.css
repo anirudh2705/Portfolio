@@ -39,7 +39,8 @@ body {
     color: var(--color-white);
     line-height: 1.7;
     background-image: url(../src/assets/bgtexture.png) ;
-    overflow: none;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /*-----------------General styles-----------------*/
