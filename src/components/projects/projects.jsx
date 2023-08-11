@@ -8,7 +8,7 @@ const data = [
     image: Portfolio,
     title: 'My Portfolio',
     github: 'https://github.com/anirudh2705/portfolio',
-    demo: ''
+    demo: 'https://anirudhpatnaik.netlify.app/'
   }
 
 ]
