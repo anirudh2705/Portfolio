@@ -27,8 +27,8 @@ const projects = () => {
                 </div>
                 <h3>{title}</h3>
                 <div className="project__item-cta">
-                  <a href={github} target='_blank' className='btn'>Live Demo</a>
-                  <a href={demo} target='_blank' className='btn btn-primary'>Github</a>
+                  <a href={github} target='_blank' className='btn'>Github</a>
+                  <a href={demo} target='_blank' className='btn btn-primary'>Live Demo</a>
                 </div>
               </article>
             )
