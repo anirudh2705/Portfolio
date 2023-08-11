@@ -31,3 +31,17 @@ nav a.active{
     background: var(--color-primary);
     color: black;
 }
+
+/* ----------- Media Quries for tablets -----------*/
+@media screen and (max-width: 1024px) {
+    nav a{
+        font-size: 0.9rem;
+    }
+}
+
+/* ----------- Media Quries for mobiles -----------*/
+@media screen and (max-width: 600px ) {
+    nav a{
+        font-size: 0.7rem;
+    }
+}
