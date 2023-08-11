@@ -109,4 +109,8 @@ header{
     .header__socials, .scroll__down{
         display: none;
     }
+
+    #scroll__down{
+        top: 10rem;
+    }
 }
