@@ -13,7 +13,7 @@ const header = () => {
         <h5 className="text-light">Fullstack Developer</h5>
         <Cv />
         <Socials/>
-        <a href="#about" id="scroll__down" ></a>
+        <a href="#contact" id="scroll__down" ></a>
       </div>
     </header>
   )

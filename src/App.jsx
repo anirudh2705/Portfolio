@@ -4,7 +4,7 @@ import Nav from './components/nav/nav'
 import About from './components/about/about'
 import Skills from './components/skills/skills'
 import Projects from './components/projects/projects'
-import Footer from './components/footer/footer'
+import Contact from './components/contact/contact'
 
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
         <About />
         <Skills />
         <Projects/>
-        <Footer />
+        <Contact />
     </>
   )
 }
