@@ -1,0 +1,43 @@
+.scroll__btn-top{
+    background: var(--color-primary);
+    position: fixed;
+    bottom: 90px;
+    right: 90px;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+
+#scroll__up-icon{
+    color: var(--color-white);
+    margin-left: 6px;
+	animation: wheel 2s ;
+	-webkit-animation: wheel 2s ;
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		bottom: 0;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 0px;
+	}
+}
+
+/* ----------- Media Quries for mobiles -----------*/
+@media screen and (max-width: 600px ) {
+    .scroll__btn-top{
+        right: 50px;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(9px);
+    }
+}
+
