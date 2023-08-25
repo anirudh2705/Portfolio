@@ -1,17 +1,17 @@
 import React from 'react'
 import './nav.css'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 
-const Nav = () => {
+const Nav = (props) => {
+  const { navRef } = props;
   const [nav, activeNav] = useState('#');
   return (
     <nav>
-      <a href="#" onClick={() => activeNav('#')} className={nav === '#' ? "active" : ''}>Home</a>
-      <a href="#about" onClick={() => activeNav('#about')} className={nav === '#about' ? 'active' : ''}>About</a>
-      <a href="#skills" onClick={() => activeNav('#skills')} className={nav === '#skills' ? 'active' : ''}>Skills</a>
-      <a href="#projects" onClick={() => activeNav('#projects')} className={nav === '#projects' ? 'active' : ''}>Portfolio</a>
-      <a href="#contact" onClick={() => activeNav('#contact')} className={nav === '#contact' ? 'active' : ''}>Contact</a>
-      
+      <div onClick={() => {activeNav('#'); navRef('header')} } className={nav === '#' ? "active" : ''}>Home</div>
+      <div onClick={() => {activeNav('#about'); navRef('about')}} className={nav === '#about' ? 'active' : ''}>About</div>
+      <div onClick={() => {activeNav('#skills'); navRef('skills')}} className={nav === '#skills' ? 'active' : ''}>Skills</div>
+      <div onClick={() => {activeNav('#projects'); navRef('projects')}} className={nav === '#projects' ? 'active' : ''}>Portfolio</div>
+      <div onClick={() => {activeNav('#contact'); navRef('contact')}} className={nav === '#contact' ? 'active' : ''}>Contact</div>      
     </nav>
   )
 }
