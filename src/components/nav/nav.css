@@ -14,20 +14,21 @@ nav{
     backdrop-filter: blur(9px);
 }
 
-nav a{
+nav div{
     background: transparent;
     padding: 0.1rem 0.5rem;
     border-radius: 0.4rem;
     display: flex;
     color: var(--color-light);
     font-size: 0.95rem;
+    cursor: pointer;
 }
 
-nav a:hover{
+nav div:hover{
     background: rgba(0, 0, 0, 0.2);
 }
 
-nav a.active{
+nav div.active{
     background: var(--color-primary);
     color: black;
 }
